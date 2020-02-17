@@ -63,9 +63,10 @@ public class NLConfig {
 	public static boolean reviveOnLogin = false;
 	
 	@Config.Comment({
-		"If true, then when a player dies they will not respawn until dawn of the next day"
+		"If true, then when a player dies they will enter spectator mode and not respawn until dawn of the next day.",
+		"When all players are dead, time is set to dawn and all players respawn"
 	})
-	public static boolean SpawnAtDawn = true;
+	public static boolean SpawnAtDawn = false;
 
 	@Config.Comment({
 		"The frequency at which players will regenerate lives (in seconds), up until the regenMaxLives config",
