@@ -61,6 +61,11 @@ public class NLConfig {
             "Note that this config will not work if the player is banned - you'll need to use the revive command or manually unban the player"
 	})
 	public static boolean reviveOnLogin = false;
+	
+	@Config.Comment({
+		"If true, then when a player dies they will not respawn until dawn of the next day"
+	})
+	public static boolean SpawnAtDawn = true;
 
 	@Config.Comment({
 		"The frequency at which players will regenerate lives (in seconds), up until the regenMaxLives config",
